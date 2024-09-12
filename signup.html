@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Sign_Up Page</title>
+  <script src="./src/js/signup.js"></script>
+  <!-- <style>
+    #successMessage {
+        display: none;
+        margin-top: 20px;
+        color: green;
+        font-size: 1.2em;
+    }
+</style> -->
+</head>
+
+<body>
+  <!-- header_section start -->
+  <section>
+    <div class="container-fluid bg-black">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-8 d-flex justify-content-center align-items-center">
+          <span class="shop-now">
+            <p class="first-txt text-white m-0  ">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!<a
+                class="text-decoration-underline" href="#">ShopNow</a></p>
+          </span>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4  d-flex justify-content-center align-content-end">
+          <div class="dropdown-center ">
+            <button class="language border-0 btn btn-black text-white dropdown-toggle" type="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Language
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">Urdu</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Exclusive</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active  " aria-current="page" href="Home.html">Home</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active border-bottom" href="signup.html">Sign Up</a>
+
+            </li>
+
+          </ul>
+          <form class="d-flex " role="search">
+            <input class="form-control  me-2" type="search" placeholder="What are you looking for?"
+              aria-label="Search"><img class="srch_icn" src="./src/images/search.svg" alt="">
+            <!-- <div class="nav_icn d-flex justify-content-center align-items-center gap-2">
+              <img src="./src/images/hart.svg" alt="">
+              <img src="./src/images/Cart1 with buy.svg" alt="">
+            </div> -->
+          </form>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- header_section end -->
+
+  <!-- login_details_start -->
+  <section>
+    <div class="container-fluid py-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="shop_by_phone w-100">
+            <img src="./src/images/Side Image.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <div class="login_form">
+            <div class="login_txt">
+              <h1>Create an account</h1>
+              <p class="fw-bold">Enter your details below</p>
+            </div>
+            <form class="mt-5" onsubmit="validateForm(event)">
+              <input class="form-control shadow-none border-0 d-block mb-3" type="text" placeholder="Name" required>
+              <hr>
+              <input class="form-control shadow-none border-0 d-block mb-3" type="email" placeholder="Enter Your E-mail" required>
+              <hr>
+              <input class="form-control shadow-none border-0 d-block mb-3" type="password" placeholder="Password" required>
+              <hr>
+              <div id="create_account" class="login_password mt-5 text-center ">
+                  <button class="btn btn-danger btn-lg rounded-0 rounded-1 px-5" type="submit">Create Account</button>
+              </div>
+              <div class="google_btn border border-1 py-2 ms-md-5 text-center rounded-1 mt-3" style="width: 232px;">
+                <img src="./src/images/Icon-Google.svg" alt="">
+                <a class="text-black text-decoration-underline"
+                  href="https://support.google.com/mail/answer/56256?hl=en" target="_blank">Sign up with Google</a>
+
+
+              </div>
+          </form>
+           
+          </div>
+
+        
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- login_details_end-->
+  <!-- footer_start -->
+  <footer class="bg-black">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="footer_1">
+            <ul>
+              <li>
+                <h4 class="text-white">Exclusive</h4>
+              </li>
+              <li><a href="#">
+                  <h6>Subscribe</h6>
+                </a></li>
+              <li><a href="#">Get 10% off your first order</a></li>
+              <li>
+                <div class="input_icn position-relative">
+                  <input class="email_input bg-black border px-2 py-1  mt-2 w-100" type="email"
+                    placeholder="Enter your email"><a class="icn_send" href="#"><img class=" img-fluid"
+                      src="./src/images/icon-send.svg" alt=""></a>
+                </div>
+
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="footer_2">
+            <ul>
+
+              <li>
+                <h6 class="text-white">Support</h6>
+              </li>
+              <li><a href="#">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</a></li>
+              <li><a href="#">exclusive@gmail.com</a></li>
+              <li><a href="#">+92 307 4826305</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="footer_3">
+            <ul>
+
+              <li>
+                <h6 class="text-white">Account</h6>
+              </li>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Login / Register</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Shop</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="footer_4">
+            <ul>
+
+              <li>
+                <h6 class="text-white">Quick Link</h6>
+              </li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms Of Use</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer_4">
+            <ul>
+              <li>
+                <h6 class="text-white">Download App</h6>
+              </li>
+              <li><a href="#">Save $3 with App New User Only</a></li>
+              <li><a href="#"><img src="./src/images/QR_code.svg" alt="" class="img-fluid"></a></li>
+              <li>
+                <div class="footer_icn">
+                  <a href="#"><img class="me-2" src="./src/images/Icon-Facebook.svg" alt="" class="img-fluid"></a>
+                  <a href="#"><img class="me-2" src="./src/images/Icon-Twitter.svg" alt="" class="img-fluid"></a>
+                  <a href="#"><img class="me-2" src="./src/images/icon-instagram.svg" alt="" class="img-fluid"></a>
+                  <a href="#"><img class="me-2" src="./src/images/Icon-Linkedin.svg" alt="" class="img-fluid"></a>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="text-white">
+    <div class="copy_right text-center py-2">
+      <p class="text-white">Copyright Rimel 2022. All right reserved</p>
+    </div>
+  </footer>
+  <!-- footer_end -->
+
+  <script src="./src/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

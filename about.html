@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>About Us</title>
+  <style>
+    .search-wrapper {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+    .search-wrapper input[type="search"] {
+        padding-right: 40px; /* Space for the search icon */
+    }
+    .search-wrapper .srch_icn {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px; /* Adjust icon size if needed */
+        height: 20px; /* Adjust icon size if needed */
+        pointer-events: none; /* Ensures icon doesn't block input interaction */
+    }
+    .search-results {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border: 1px solid #ddd;
+        background: white;
+        z-index: 1000;
+        max-height: 200px;
+        overflow-y: auto;
+        display: none; /* Hide initially */
+    }
+    .search-results div {
+        padding: 10px;
+        cursor: pointer;
+    }
+    .search-results div:hover {
+        background: #f1f1f1;
+    }
+</style>
+
+</head>
+
+<body>
+  <!-- header_section start -->
+  <section>
+    <div class="container-fluid bg-black">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-8 d-flex justify-content-center align-items-center">
+          <span class="shop-now">
+            <p class="first-txt text-white m-0  ">Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!<a
+                class="text-decoration-underline" href="#">ShopNow</a></p>
+          </span>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4  d-flex justify-content-center align-content-end">
+          <div class="dropdown-center ">
+            <button class="language border-0 btn btn-black text-white dropdown-toggle" type="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Language
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">Urdu</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Exclusive</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active  " aria-current="page" href="Home.html">Home</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active border-bottom" href="signup.html">Sign Up</a>
+
+            </li>
+
+          </ul>
+          <form class="d-flex position-relative" role="search">
+            <input id="searchInput" class="form-control me-2" type="search" placeholder="What are you looking for?" aria-label="Search">
+            <img class="srch_icn" src="./src/images/search.svg" alt="">
+            <div id="searchResults" class="search-results"></div>
+        </form>
+        
+          <!-- <form class="d-flex " role="search">
+            <input class="form-control  me-2" type="search" placeholder="What are you looking for?"
+              aria-label="Search"><img class="srch_icn" src="./src/images/search.svg" alt=""> -->
+            <!-- <div class="nav_icn d-flex justify-content-center align-items-center gap-2">
+              <img src="./src/images/hart.svg" alt="">
+              <img src="./src/images/Cart1 with buy.svg" alt="">
+            </div> -->
+          <!-- </form> -->
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- header_section end -->
+
+  <!-- About Us_start -->
+  <div class="container py-5">
+    <div class="row">
+      <span class="text-black mb-5"><a class="text-black" href="Home.html">Home</a>/ <a class="text-black"
+          href="about.html">About</a></span>
+      <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+        <div class="about_txt">
+          <h1 class="mb-3">Our Story</h1>
+          <p class="mb-4">Launced in 2015, Exclusive is South Asia’s premier online shopping makterplace with an active
+            presense in Bangladesh. Supported <br> by wide range of tailored marketing, data and service solutions,<br>
+            Exclusive has 10,500 sallers and 300 brands and serves 3 <br> millioons customers across the region. </p>
+          <p>Exclusive has more than 1 Million products to offer, growing at a <br> very fast. Exclusive offers a
+            diverse assotment in categories <br> ranging from consumer.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 ">
+        <div class="g-img  " data-aos="flip-up" data-aos-duration="3000" data-aos-delay="500">
+          <img src="./src/images/Side Image (1).svg" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Categories Images start -->
+  <section>
+    <div class="container">
+      <div class="row py-3 text-center">
+        <div class="col-6 col-md-3 mb-4">
+          <div class="Elec_box1" data-aos="zoom-out-right"  data-aos-delay="500">
+            <div class="CellPhone_img text-center mt-4 ">
+              <img src="./src/images/Services.svg" alt="" class="img-fluid">
+            </div>
+            <h2 class="dollar_hover mt-2">10.5K</h2>
+            <p class="dollar_hover mt-2">Sallers active our site</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="Elec_box1" data-aos="zoom-out-right"  data-aos-delay="1000">
+            <div class="Computer_img text-center mt-4 ">
+              <img src="./src/images/Services (1).svg" alt="" class="img-fluid">
+            </div>
+            <h2 class="dollar_hover mt-2">33k</h2>
+            <p class="dollar_hover mt-2">Mopnthly Produduct Sale</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="Elec_box1" data-aos="zoom-out-right"  data-aos-delay="1500">
+            <div class="SmartWatch_img text-center mt-4 ">
+              <img src="./src/images/Services (2).svg" alt="" class="img-fluid">
+            </div>
+            <h2 class="dollar_hover mt-2">45.5k</h2>
+            <p class="dollar_hover mt-2">Customer active in our site</p>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div class="Elec_box1" data-aos="zoom-out-right"  data-aos-delay="2000">
+            <div class="Camera_img text-center mt-4 ">
+              <img src="./src/images/Services (3).svg" alt="" class="img-fluid">
+            </div>
+            <h2 class="dollar_hover mt-2">25K</h2>
+            <p class="dollar_hover mt-2">Anual gross sale in our site</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Categories Images start-->
+
+   <!-- team_mamber strat -->
+    <div class="container py-5">
+      <div class="row ">
+        <div class="col-md-4">
+          <div class="team ">
+            <div class="mamber_img mb-3 text-center  rounded-1" >
+              <img src="./src/images/about_img1.svg" alt="" class="img-fluid">
+            </div>
+            <h4>Tom Cruise</h4>
+            <p>Founder & Chairman</p>
+            <span>
+              <a href=""><img src="./src/images/Icon-Twitte1r.svg" alt=""></a>
+            <a href=""><img src="./src/images/icon-instagram1.svg" alt=""></a>
+            <a href=""><img src="./src/images/Icon-Linkedin1.svg" alt=""></a>
+
+            </span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team">
+            <div class="mamber_img text-center mb-3 rounded-1">
+              <img src="./src/images/about_img2.svg" alt="" class="img-fluid">
+            </div>
+            <h4>Emma Watson</h4>
+            <p>Managing Director</p>
+            <span>
+              <a href=""><img src="./src/images/Icon-Twitte1r.svg" alt=""></a>
+            <a href=""><img src="./src/images/icon-instagram1.svg" alt=""></a>
+            <a href=""><img src="./src/images/Icon-Linkedin1.svg" alt=""></a>
+
+            </span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team">
+            <div class="mamber_img text-center  mb-3 rounded-1">
+              <img src="./src/images/about_img3.svg" alt="" class="img-fluid">
+            </div>
+            <h4>Will Smith</h4>
+            <p>Product Designer</p>
+            <span>
+              <a href=""><img src="./src/images/Icon-Twitte1r.svg" alt=""></a>
+            <a href=""><img src="./src/images/icon-instagram1.svg" alt=""></a>
+            <a href=""><img src="./src/images/Icon-Linkedin1.svg" alt=""></a>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- team_mamber end -->
+  <!-- login Us_end-->
+
+  <!-- section free_fast -->
+  <div class="container text-center py-4">
+    <div class="free_fast">
+      <img src="./src/images/free and fast dilivery.svg" alt="" class="img-fluid w-50">
+    </div>
+  </div>
+  <!-- section free_fast end-->
+  <!-- footer_start -->
+  <footer class="bg-black">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="footer_1">
+            <ul>
+              <li>
+                <h4 class="text-white">Exclusive</h4>
+              </li>
+              <li><a href="#">
+                  <h6>Subscribe</h6>
+                </a></li>
+              <li><a href="#">Get 10% off your first order</a></li>
+              <li>
+                <div class="input_icn position-relative">
+                  <input class="email_input bg-black border px-2 py-1  mt-2 w-100" type="email"
+                    placeholder="Enter your email"><a class="icn_send" href="#"><img class=" img-fluid"
+                      src="./src/images/icon-send.svg" alt=""></a>
+                </div>
+
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="footer_2">
+            <ul>
+
+              <li>
+                <h6 class="text-white">Support</h6>
+              </li>
+              <li><a href="#">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</a></li>
+              <li><a href="#">exclusive@gmail.com</a></li>
+              <li><a href="#">+92 307 4826305</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="footer_3">
+            <ul>
+
+              <li>
+                <h6 class="text-white">Account</h6>
+              </li>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Login / Register</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Shop</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="footer_4">
+            <ul>
+
+              <li>
+                <h6 class="text-white">Quick Link</h6>
+              </li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms Of Use</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer_4">
+            <ul>
+              <li>
+                <h6 class="text-white">Download App</h6>
+              </li>
+              <li><a href="#">Save $3 with App New User Only</a></li>
+              <li><a href="#"><img src="./src/images/QR_code.svg" alt="" class="img-fluid"></a></li>
+              <li>
+                <div class="footer_icn">
+                  <a href="#"><img class="me-2" src="./src/images/Icon-Facebook.svg" alt="" class="img-fluid"></a>
+                  <a href="#"><img class="me-2" src="./src/images/Icon-Twitter.svg" alt="" class="img-fluid"></a>
+                  <a href="#"><img class="me-2" src="./src/images/icon-instagram.svg" alt="" class="img-fluid"></a>
+                  <a href="#"><img class="me-2" src="./src/images/Icon-Linkedin.svg" alt="" class="img-fluid"></a>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="text-white">
+    <div class="copy_right text-center py-2">
+      <p class="text-white">Copyright Rimel 2022. All right reserved</p>
+    </div>
+  </footer>
+  <!-- footer_end -->
+  <script>
+    // Sample data for demonstration
+    const sampleData = [
+        "Sallers active our site",
+        "Mopnthly Produduct Sale",
+        "Cherry",
+        "Date",
+        "Grape",
+        "Kiwi",
+        "Mango",
+        "Orange",
+        "Peach",
+        "Pineapple"
+    ];
+
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+
+    searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase();
+        searchResults.innerHTML = ''; // Clear previous results
+        if (query) {
+            const filteredResults = sampleData.filter(item => item.toLowerCase().includes(query));
+            filteredResults.forEach(result => {
+                const div = document.createElement('div');
+                div.textContent = result;
+                div.addEventListener('click', function() {
+                    searchInput.value = result;
+                    searchResults.innerHTML = ''; // Clear results
+                    searchResults.style.display = 'none'; // Hide results
+                });
+                searchResults.appendChild(div);
+            });
+            searchResults.style.display = 'block'; // Show results
+        } else {
+            searchResults.style.display = 'none'; // Hide results if input is empty
+        }
+    });
+
+    // Hide search results when clicking outside
+    document.addEventListener('click', function(event) {
+        const searchWrapper = document.querySelector('.position-relative');
+        if (!searchWrapper.contains(event.target)) {
+            searchResults.style.display = 'none';
+        }
+    });
+</script>
+<script>
+  AOS.init();
+</script>
+  <script src="./src/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
