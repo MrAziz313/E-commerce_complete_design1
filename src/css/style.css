@@ -8,12 +8,19 @@ a{
   text-decoration: none;
   color: white;
 }
-
+.checked {
+  color: orange;
+}
 .feature{
   width: 100%;
   height: 566px;
   position: relative;
 }
+.hert,.eye{
+  width: 35px;
+  height: 35px;
+}
+
 
 .woman_collection{
   width: 100%;
@@ -86,9 +93,7 @@ a{
   font-size: 15px;
   margin-top: 10px;
  }
-.hert img:hover{
-color: #DB4444;
- }
+
 .buynow{
   background-color: #00FF66;
 }
@@ -124,6 +129,10 @@ color: #DB4444;
 .Elec_box:hover{
  background-color:  #DB4444;
 }
+.hert:hover{
+  background-color:  #DB4444;
+}
+
 .feature_txt{
   position: absolute;
     bottom: 40px;
@@ -196,6 +205,13 @@ color: #DB4444;
   cursor: pointer;
   width: 8%;
 }
+.hert,.eye{
+  background-color: white;
+}
+.hert:hover,.eye:hover{
+  background-color: #DB4444;
+}
+
 /* index_page end */
 
 @media screen and (max-width:576px){
