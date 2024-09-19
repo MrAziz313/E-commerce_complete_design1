@@ -9,11 +9,11 @@ function validateForm(event) {
         return false;
     }
 
-    // var passwordPattern = ''; // At least one uppercase letter
-    // if (!passwordPattern.test(password)) {
-    //     alert("Password must contain at least one uppercase letter.");
-    //     return false;
-    // }
+    var passwordPattern = ''; // At least one uppercase letter
+    if (!passwordPattern.test(password)) {
+        alert("Password must contain at least one uppercase letter.");
+        return false;
+    }
 
     event.preventDefault();
     alert("Login successful!");
