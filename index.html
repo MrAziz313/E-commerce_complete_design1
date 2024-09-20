@@ -97,10 +97,12 @@
             <form class="mt-5" onsubmit="return validateForm(event)">
               <input class="form-control shadow-none border-0 d-block mb-3" type="email" placeholder="Enter Your E-mail" required>
               <hr>
-              <div class="password-toggle d-block mb-3">
-                  <input class="form-control shadow-none border-0" id="password-field" type="password" placeholder="Password"  required>
-                  <img id="toggle-icon" class="toggle-icon" src="https://img.icons8.com/ios-filled/50/000000/invisible.png" alt="Toggle Password Visibility" onclick="togglePasswordVisibility()">
-              </div>
+              <div style="position: relative;">
+                <input class="border-0 shadow-none form-control" type="password" placeholder="Enter your password" id="password" required>
+                <img id="toggle-icon" src="https://img.icons8.com/ios-filled/50/000000/invisible.png" 
+                     onclick="togglePasswordVisibility()" 
+                     style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer; width: 20px;">
+            </div>
               <hr>
               <div id="create_account" class="login_password mt-5 text-center">
                   <button class="btn btn-danger py-2 px-5 ms-3 rounded-1" type="submit">Login</button>
